@@ -6,6 +6,10 @@ const app = express();
 const route = require('./routes/index');
 const port = 3000;
 
+//import db and connect
+const db = require('./config/db/index');
+db.connect();
+
 
 app.use(morgan('combined'));
 app.use('/static',express.static(path.join(__dirname, 'public')));
