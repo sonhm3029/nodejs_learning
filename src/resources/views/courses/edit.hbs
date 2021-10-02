@@ -1,0 +1,19 @@
+<h1 style="font-size: 40px;" class="mb-4">EDIT COURSE</h1>
+
+<form method="POST" action="/courses/{{course._id}}?_method=PUT">
+  <div class="form-group">
+    <label for="course_name">Tên khóa học</label>
+    <input type="text" name='name' class="form-control" id="course_name" value="{{course.name}}">
+  </div>
+  <div class="form-group">
+    <label for="course_description">Mô tả</label>
+    <textarea type="text" name='description' class="form-control" id="course_description" >{{course.description}}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="course_video-id">Video ID</label>
+    <input type="text" name='videoId' class="form-control" id="course_video-id" value="{{course.videoId}}">
+  </div>
+
+  <button type="text" class="btn btn-primary">Confirm</button>
+  <a type="text" class="btn btn-primary text-white" href="/courses/my-courses">Cancel</a>
+</form>

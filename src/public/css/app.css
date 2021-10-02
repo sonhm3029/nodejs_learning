@@ -1,3 +1,18 @@
 h1 {
   color: red;
   font-size: 15px; }
+
+body {
+  height: 100vh; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.course-item {
+  margin-top: 20px; }
+
+.form-group {
+  font-weight: bold; }
